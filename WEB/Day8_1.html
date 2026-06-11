@@ -1,0 +1,86 @@
+<!-- CSS Layouts (Flexbox)
+Focus: Creating layouts using flexbox .
+Task:
+Create a 3-column Services Section layout:
+●
+Each column includes:
+○
+Service title
+○
+Icon/image
+○
+Description
+●
+Use Flexbox to align them side by side. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 10;
+            padding: 20px;
+        }
+
+        .flex-container {
+            display: flex;
+            padding: 20px;
+
+        }
+
+        .flex-item {
+            flex: 3;
+            border: 3px solid black;
+            background-color: #b1e0ec;
+            align-items: center;
+        }
+
+        h3,
+        p {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .center-img {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="flex-container">
+            <div class="flex-item">
+                <h3>Service 1</h3>
+                <img class="center-img" src="D:\CODING\WEB\Media\Nature6.jpg" alt="Image 1" width="200" height="150">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia ipsa obcaecati officiis repellat
+                    voluptatem sint, molestias animi dolor aliquam nostrum esse culpa eos consectetur odio
+                    exercitationem at odit maiores modi.
+                </p>
+            </div>
+            <div class="flex-item">
+                <h3>Service 2</h3>
+                <img class="center-img" src="D:\CODING\WEB\Media\Nature7.jpg" alt="Image 2" width="200" height="150">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit amet perferendis quibusdam ex
+                    mollitia voluptatibus. Necessitatibus cumque, delectus soluta ut odit assumenda et, obcaecati est
+                    dolore perferendis rem at eaque?</p>
+            </div>
+            <div class="flex-item">
+                <h3>Service 3</h3>
+                <img class="center-img" src="D:\CODING\WEB\Media\Nature8.jpg" alt="Image 3" width="200" height="150">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nesciunt, rerum ex natus magnam
+                    velit, voluptatem eaque earum ea placeat doloremque ratione neque saepe deleniti sequi in quo illo
+                    nisi?</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
