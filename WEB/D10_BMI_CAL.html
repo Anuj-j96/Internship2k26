@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>BMI CALCULATOR</title>
+    <style>
+        .frame {
+            max-width: 600px;
+            border: 1px solid black;
+            border-radius: 25px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            margin: auto;
+            padding: 20px;
+        }
+
+        .BMI {
+
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border: 1px solid #96c7bc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="frame">
+        <h3>BMI CALCULATOR</h3>
+        <div class="BMI">
+            <script>
+                let weight;
+                let height;
+
+                const bmi = (weight, height) => (weight * 10000) / (height * height);
+                document.write("BMI is  " + bmi(69, 170) + "<br>");
+
+                
+
+            </script>
+        </div>
+    </div>
+
+</body>
+
+</html>
