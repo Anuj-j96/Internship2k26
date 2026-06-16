@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in Page</title>
+<style>
+    body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+        background-color:rgb(218, 222, 226) ;
+
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.459);
+        }
+        
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select
+        {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+      
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            background-color: #5a45a0;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #4CAF50;
+        }
+        button[type="reset"] {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            background-color: #5a45a0;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="reset"]:hover {
+            background-color: #ff0000;
+        }
+        .login {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+        }
+</style>
+
+</head>
+
+<body>
+    <form  class="form-container">
+    
+        <h2>Sign in</h2>
+        <label for="username">Enter Username:</label>
+        <input type="text" name="username" requierd>
+        <br><br>
+        <label for="email">Enter Email:</label>
+        <input type="email" name="email" requierd>
+        <br><br>
+        <label for="dob">Enter Date Of Birth:</label>
+        <input type="date" name="dob" requierd >
+        <br><br>
+        <label for="password">Enter Password:</label>
+        <input type="password" name="password" requierd>
+        <br><br>
+        <label for="password">Confirm Password:</label>
+        <input type="password" name="password" requierd>
+        <br><br>
+        <button type="submit">Sign-In</button>
+        <br><br>
+        <button type="reset">Cancel</button>
+    
+    
+    <div class="login">
+            <a href="#login">Already have account?</a>
+
+    </div>
+    </form>
+</body>
+
+</html>
+
+        
+    
+
