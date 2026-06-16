@@ -1,0 +1,123 @@
+<!-- function loop array object -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div-container{
+            
+            max-width: 600px;
+            border: 1px solid black;
+            border-radius: 25px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            margin: auto;
+            padding: 20px;
+        }
+        .box{
+            
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border: 1px solid #96c7bc;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="div-container">
+        <h1>JAVA SCRIPT DAY 2</h1>
+        <div class="box">
+            <h3>Functions</h3>
+            <script>
+                "<h4> Normal Function with single argument </h4>"
+                function username(name) {
+                    return "Hello" + name;
+
+                }
+
+                console.log(username(User))
+
+                "<h4> Function stored in variable with single argument </h4>"
+                const fun = multi(a)
+                {
+                    return a * a;
+
+                };
+
+                console.log(fun);
+
+                <h4> Arrow Functions stored in variable</h4>
+
+                const add = (a, b) => a + b;
+                console.log(add(5, 6));
+                const multi = (a, b) => {
+                    const result = a * b;
+                    return result;
+                }
+                console.log(multi(5, 6));
+            </script>
+        </div>
+
+        <div class="box">
+
+            <h3>Loops</h3>
+            <script>
+                "<h4> For Loop</h4>"
+
+                for (let i = 0; i <= 5; i++) {
+                    document.write(i);
+                }
+                "<h4> While Loop</h4>"
+                let j = 1;
+                while (j <= 5) {
+                    document.write(j);
+                    j++;
+                }
+
+            </script>
+        </div>
+
+        <div class="box">
+            <h3>Array</h3>
+            <script>
+                let arr = [1, 2];
+                arr.push[3];
+                arr.push[4, 5];
+                document.write("New Array - " + arr + "<br>");
+
+                let removed = arr.pop();
+                document.write("Removed element - " + removed + "<br>");
+                document.write("New Array after performing pop operation - " + arr + "<br>");
+
+
+                const evens = arr.filter(n => n % 2 === 0);
+                document.write("After Sorting array: " + evens + "<br>");
+
+
+            </script>
+        </div>
+
+        <div class="box">
+            <h3>Object Method</h3>
+            <script>
+                const student = {
+                    name: "JOhn",
+                    age: 21,
+                    city: "USA",
+                    greet() {
+                        return "Hi, I am " + this.name;
+                    }
+                };
+
+                console.log(student.name);
+                console.log(student["age"]);
+                console.log(student.greet());   
+            </script>
+        </div>
+
+    </div>
+</body>
