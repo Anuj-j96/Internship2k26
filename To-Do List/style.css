@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(240, 248, 255);
+    margin :10px;
+    padding: 0;
+}
+
+.box {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid rgb(167, 173, 179);
+    border-radius: 20px;
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+textarea{
+    border-color: black;
+    width: 50%;
+    resize: vertical;
+    max-width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.addTask{
+    margin: 10px;
+    background-color: #007bff;
+}
+.task{
+    border:  1px solid black;
+    padding:10px;
+    margin: 5px;
+}
+button{
+    margin-right: 5px;
+}
+.completed{
+    background-color: #28A745;
+    color: white;
+}
+.remove:hover{
+    transition: ease-in-out 0.3s;
+    background-color: #DC3545;
+}
