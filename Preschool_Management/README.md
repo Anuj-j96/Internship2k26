@@ -1,6 +1,6 @@
-# 🏫 School Management System
+# 🏫 Pre_School Management System
 
-A simple web-based **School Management System** developed using **Python Flask, MySQL, HTML5, Bootstrap, CSS, and JavaScript**.
+A simple web-based **Pre School Management System** developed using **Python Flask, MySQL, HTML5, Bootstrap, CSS, and JavaScript**.
 
 The system provides separate portals for **Admin, Teacher, and Parent** users with role-based login and basic school management features.
 
@@ -88,16 +88,16 @@ The Parent Portal allows parents to view information about their child/student.
 
 # 🛠️ Technologies Used
 
-| Technology | Purpose |
-|---|---|
-| HTML5 | Web page structure |
-| Bootstrap | Responsive user interface |
-| CSS3 | Custom styling |
-| JavaScript | Client-side functionality |
-| Python | Backend programming |
-| Flask | Web framework |
-| MySQL | Database management |
-| Flask-MySQLdb | Flask and MySQL connection |
+|    Technology      |          Purpose           |
+|--------------------|----------------------------|
+|       HTML5        |      Web page structure    |
+|     Bootstrap      |  Responsive user interface |
+|       CSS3         |       Custom styling       |
+|     JavaScript     |  Client-side functionality |
+|       Python       |    Backend programming     |
+|       Flask        |       Web framework        |
+|       MySQL        |     Database management    |
+|    Flask-MySQLdb   | Flask and MySQL connection |
 
 ---
 
@@ -313,31 +313,31 @@ Parent Portal
 
 # 👥 User Roles
 
-| Role | Main Access |
-|---|---|
-| **Admin** | Manage teachers, parents, students and timetable |
-| **Teacher** | View assigned class, students and timetable |
-| **Parent** | View child/student information and timetable |
+|  Role       |                 Main Access                      |
+|-------------|--------------------------------------------------|
+| **Admin**   | Manage teachers, parents, students and timetable |
+| **Teacher** | View assigned class, students and timetable      |
+| **Parent**  | View child/student information and timetable     |
 
 ---
 
 # 🔗 Main Flask Routes
 
-| Route | Purpose |
-|---|---|
-| `/` | Landing Page |
-| `/login` | Login Page |
-| `/register` | Parent Registration |
-| `/admin` | Admin Portal |
-| `/teacher` | Teacher Portal |
-| `/parent` | Parent Portal |
-| `/register_teacher` | Register Teacher |
-| `/register_student` | Register Student |
-| `/approve_parent` | View Pending Parents |
-| `/approve/<id>` | Approve Parent |
-| `/reject/<id>` | Reject Parent |
-| `/timetable` | Timetable Management |
-| `/logout` | Logout |
+|       Route         |       Purpose        |
+|---------------------|----------------------|
+| `/`                 | Landing Page         |
+| `/login`            | Login Page           |
+| `/register`         | Parent Registration  |
+| `/admin`            | Admin Portal         |
+| `/teacher`          | Teacher Portal       |
+| `/parent`           | Parent Portal        |
+| `/register_teacher` | Register Teacher     |
+| `/register_student` | Register Student     |
+| `/approve_parent`   | View Pending Parents |
+| `/approve/<id>`     | Approve Parent       |
+| `/reject/<id>`      | Reject Parent        |
+| `/timetable`        | Timetable Management |
+| `/logout`           | Logout               |
 
 ---
 
@@ -630,19 +630,19 @@ Use Flask's `url_for()` for static files:
 
 # 📁 Important Files
 
-| File | Purpose |
-|---|---|
-| `app.py` | Main Flask backend |
-| `index.html` | School landing page |
-| `login.html` | Login page |
-| `register.html` | Parent registration |
-| `admin.html` | Admin dashboard |
-| `teacher.html` | Teacher dashboard |
-| `parent.html` | Parent dashboard |
-| `style.css` | Custom styling |
-| `script.js` | JavaScript functionality |
-| `database.txt` | MySQL database queries |
-| `README.md` | Project documentation |
+|      File       |         Purpose          |
+|-----------------|--------------------------|
+| `app.py`        | Main Flask backend       |
+| `index.html`    | School landing page      |
+| `login.html`    | Login page               |
+| `register.html` | Parent registration      |
+| `admin.html`    | Admin dashboard          |
+| `teacher.html`  | Teacher dashboard        |
+| `parent.html`   | Parent dashboard         |
+| `style.css`     | Custom styling           |
+| `script.js`     | JavaScript functionality |
+| `database.txt`  | MySQL database queries   |
+| `README.md`     | Project documentation    |
 
 ---
 
