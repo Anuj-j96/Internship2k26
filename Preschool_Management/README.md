@@ -648,6 +648,8 @@ Use Flask's `url_for()` for static files:
 
 # 👨‍💻 Author
 
+**Anuj Jamdar**
+
 **School Management System**
 
 Developed as an academic project using:
