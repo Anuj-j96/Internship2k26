@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 sidebar">
+                <h3 class="text-white text-center mt-3">
+                    Admin
+                </h3>
+                <hr class="text-white">
+                <a href="/admin">Dashboard</a>
+                <a href="/register_teacher">Register Teacher</a>
+                <a href="/approve_parent">Approve Parents</a>
+                <a href="/register_student">Register Student</a>
+                <a href="/timetable">Create Timetable</a>
+                <a href="/home">Logout</a>
+            </div>
+            <div class="col-md-10 content">
+                <h2 class="mb-4">
+                    Welcome Admin
+                </h2>
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <div class="dashboard-card bg-blue">
+                            <h2>{{ teacher_count }}</h2>
+                            <p>Teachers</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="dashboard-card bg-green">
+                            <h2>{{ parent_count }}</h2>
+                            <p>Parents</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="dashboard-card bg-orange">
+                            <h2>{{ student_count }}</h2>
+                            <p>Students</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="dashboard-card bg-red">
+                            <h2>{{ pending_count }}</h2>
+                            <p>Pending Requests</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-4 shadow-sm">
+                    <div class="card-body">
+                        <h4>
+                            Quick Actions
+                        </h4>
+                        <hr>
+                        <a href="/register_teacher" class="btn btn-primary m-2">
+                            Register Teacher
+                        </a>
+                        <a href="/approve_parent" class="btn btn-success m-2">
+                            Approve Parent
+                        </a>
+                        <a href="/register_student" class="btn btn-warning m-2">
+                            Register Student
+                        </a>
+                        <a href="/timetable" class="btn btn-info m-2 text-white">
+                            Create Timetable
+                        </a>
+                    </div>
+                </div>
+                <div class="card mt-4 shadow-sm">
+                    <div class="card-body">
+                        <h4>
+                            About Admin
+                        </h4>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

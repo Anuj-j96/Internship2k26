@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Timetable</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card shadow">
+            <div class="card-header bg-primary text-white">
+                <h4 class="mb-0">
+                    Create Timetable
+                </h4>
+            </div>
+            <div class="card-body">
+                <form action="timetable.html" method="POST">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label>Class</label>
+                            <select name="class_name" class="form-select">
+                                <option>LKG</option>
+                                <option>UKG</option>
+                                <option>Nursery</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label>Day</label>
+                            <select name="day_of_week" class="form-select">
+                                <option>Monday</option>
+                                <option>Tuesday</option>
+                                <option>Wednesday</option>
+                                <option>Thursday</option>
+                                <option>Friday</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <input class="form-control" name="period_1" placeholder="Period 1">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <input class="form-control" name="period_2" placeholder="Period 2">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <input class="form-control" name="period_3" placeholder="Period 3">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <input class="form-control" name="period_4" placeholder="Period 4">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <input class="form-control" name="period_5" placeholder="Period 5">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <input class="form-control" name="period_6" placeholder="Period 6">
+                        </div>
+                    </div>
+                    <button class="btn btn-primary">
+                        Save Timetable
+                    </button>
+                    <a href="/admin" class="btn btn-secondary">
+                        Back
+                    </a>
+                </form>
+            </div>
+        </div>
+        <hr class="my-5">
+        <h3 class="mb-3">
+            Timetable List
+        </h3>
+        <table class="table table-bordered">
+            <thead class="table-primary">
+                <tr>
+                    <th>Class</th>
+                    <th>Day</th>
+                    <th>P1</th>
+                    <th>P2</th>
+                    <th>P3</th>
+                    <th>P4</th>
+                    <th>P5</th>
+                    <th>P6</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in timetable %}
+                <tr>
+                    <td>{{ row.class_name }}</td>
+                    <td>{{ row.day_of_week }}</td>
+                    <td>{{ row.period_1 }}</td>
+                    <td>{{ row.period_2 }}</td>
+                    <td>{{ row.period_3 }}</td>
+                    <td>{{ row.period_4 }}</td>
+                    <td>{{ row.period_5 }}</td>
+                    <td>{{ row.period_6 }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

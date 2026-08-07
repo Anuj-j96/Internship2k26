@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Dashboard</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 sidebar">
+                <h3 class="text-center text-white mt-3">
+                    Parent
+                </h3>
+                <hr class="text-white">
+                <a href="/parent">Dashboard</a>
+                <a href="/parent_timetable">Timetable</a>
+                <a href="/logout">Logout</a>
+            </div>
+            
+            <div class="col-md-10 content">
+                <h2 class="mb-4">
+                    Welcome {{ parent_name }}
+                </h2>
+                <div class="card mt-4 shadow-sm">
+                    <div class="card-header bg-primary text-white">
+                        Student Information
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-bordered">
+                            <tr>
+                                <th>Student Name</th>
+                                <td>{{ student.student_name }}</td>
+                            </tr>
+                            <tr>
+                                <th>Date of Birth</th>
+                                <td>{{ student.dob }}</td>
+                            </tr>
+                            <tr>
+                                <th>Gender</th>
+                                <td>{{ student.gender }}</td>
+                            </tr>
+                            <tr>
+                                <th>Class</th>
+                                <td>{{ student.class_name }}</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="card mt-4 shadow-sm">
+                    <div class="card-header bg-success text-white">
+                        Class Timetable
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Day</th>
+                                    <th>Period 1</th>
+                                    <th>Period 2</th>
+                                    <th>Period 3</th>
+                                    <th>Period 4</th>
+                                    <th>Period 5</th>
+                                    <th>Period 6</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for row in timetable %}
+                                <tr>
+                                    <td>{{ row.day_of_week }}</td>
+                                    <td>{{ row.period_1 }}</td>
+                                    <td>{{ row.period_2 }}</td>
+                                    <td>{{ row.period_3 }}</td>
+                                    <td>{{ row.period_4 }}</td>
+                                    <td>{{ row.period_5 }}</td>
+                                    <td>{{ row.period_6 }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
